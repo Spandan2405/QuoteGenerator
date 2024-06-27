@@ -1,3 +1,4 @@
+
 import axios from 'axios';
 import './App.css';
 import React from 'react';
@@ -8,8 +9,8 @@ class App extends React.Component {
   componentDidMount() {
     this.fetchAdvice();
     this.fetchRandomImage();
-  }
-
+  }   // ensures that initial data is fetched as soon as the component mounts.
+  
   fetchAdvice = () => {
     axios.get("https://api.adviceslip.com/advice")
       .then((response) => {
@@ -22,7 +23,7 @@ class App extends React.Component {
   };
 
   fetchRandomImage = () => {
-    axios.get("https://source.unsplash.com/random/1920x1080/?nature")
+    axios.get("https://picsum.photos/1920/1080.jpg")
       .then((response) => {
         const backgroundImage = response.request.responseURL;
         this.setState({ backgroundImage });
