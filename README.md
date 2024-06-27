@@ -1,4 +1,4 @@
 Random Quote Generator 
 
 Deployement Link :-
-https://quote-generator-373vdmjja-spandan-guptas-projects.vercel.app/
+https://quote-generator-i6fb.vercel.app/
